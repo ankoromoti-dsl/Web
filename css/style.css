@@ -100,6 +100,7 @@ h1,h2,h3,top-title{
     width: 375px;
     height: 375px;
     padding: 0 4rem;
+    z-index: -1;
 }
 #profile-img img {
     width: 100%;
@@ -166,4 +167,9 @@ h1,h2,h3,top-title{
     height: auto;
     display: flex;
     justify-content: center;
+}
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+.notification.is-link.is-light {
+    z-index:-1;
 }
