@@ -149,14 +149,17 @@ h1,h2,h3,top-title{
     object-position: 0 100%;
     border-radius: 50%;
 }
-#github-img{
-    width: 300px;
-    height: 300px;
+.test{
+    display: flex;
+}
+.sns-img{
+    width: 320px;
+    height: 200px;
     padding: 0 4rem;
 }
-#github-img img{
+#sns-img img{
     width: 90%;
-    min-width: 300px;
+    min-width: 100px;
     height: 90%;
     object-fit: cover;
     object-position: 0 100%;
