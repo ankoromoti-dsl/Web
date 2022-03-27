@@ -6,7 +6,7 @@ window.onload = () => {
             delay: 4000,
             disableOnInteraction: true
         },
-        speed: 500,
+        speed: 400,
         effect: 'fade',    
         });
 
