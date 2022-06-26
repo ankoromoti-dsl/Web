@@ -1,178 +1,419 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
 }
-h1,h2,h3,top-title{
-    font-family: 'Caveat', serif;
+
+a {
+  text-decoration: none;
 }
-#site-header {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    background-color: #3333339a;
+
+.text-contents {
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
-#site-logo {
-    margin-left: 20px;
+
+.footer {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  padding-bottom: 40px;
+  text-align: center;
 }
-#site-logo a{
-    text-decoration: none;
-    color: #fff;
+
+.footer h1 {
+  padding-left: 22px;
 }
-#nav-menu{
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
+
+.footer h3 {
+  width: 100%;
+  padding: 0 0px;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  letter-spacing: 7px;
+  padding-top: 50px;
 }
-.nav-menu-items{
-    margin-right: 30px;
+.footer p{
+  text-align: center;
 }
-.nav-menu-items a{
-    text-decoration: none;
-    color: #fff;
+
+.footer h1 {
+  font-size: 25px;
+  padding-left: 0px;
+  text-align: center;
 }
-.swiper-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    z-index: -1;
+
+.footer-text{
+  font-size: 10px;
+  text-align: center;
 }
-.swiper-slide {
-    display: inline-block;
-    position: relative;
+
+.top-wrapper {
+  padding: 300px 0 150px 0;
+  text-align: center;
+  background: rgb(167, 254, 250);
+  background-image: url(a.mp4);
+  background-size: cover;
+  color: white;
+  text-align: center;
 }
-.swiper-slide::after {
-    position: absolute;
+
+.top-wrapper h1 {
+  opacity: 0.9;
+  font-size: 45px;
+  letter-spacing: 5px;
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 7px;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 200px 0 rgba(74, 74, 74, 0.37);
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  padding-left: 20px;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  font-weight: bold;
+  color: #3f3f3f;
+  float: left;
+  padding: 10px 20px;
+}
+
+.header-right {
+  padding: 10px 20px;
+  float: right;
+  letter-spacing: 2px;
+  margin-right: -25px;
+  padding-right: 40px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: rgb(50, 50, 50);
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(159, 250, 2, 0.3);
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.lesson-wrapper {
+  height: 580px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+}
+
+.heading {
+  padding-left: 22px;
+  padding-bottom: 70px;
+  color: #ffffff;
+}
+
+.main {
+  background: rgb(110, 180, 255);
+  background: linear-gradient(90deg, rgb(86, 117, 255) 0%, rgb(136, 168, 255) 100%);
+}
+
+.sites h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+  color: black;
+}
+
+.lesson-icon {
+  size: 20px;
+  position: relative;
+  display: inline-block;
+  border-radius: 5%;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.lesson-icon:hover {
+  transform: scale(1.1, 1.1);
+  /* 拡大 */
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 37%;
+  width: 100%;
+  color: white;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.sites h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0px 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.sites {
+  padding-right: 40px;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.clear {
+  clear: left;
+}
+
+@media all and (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .lesson-wrapper {
+    height: 800px;
+  }
+  footer {
+    text-align: center;
+    background: rgb(110, 180, 255);
+    background: linear-gradient(90deg, rgb(121, 186, 255) 0%, rgb(72, 77, 233) 100%);
+  }
+}
+
+@media all and (max-width: 750px) {
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+  .sites h2 {
+    font-size: 2px;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .header-right {
+    display: none;
+  }
+  .menu-icon {
     display: block;
-    content: "";
-    top: 0;
-    left: 0;
+  }
+  .top-wrapper .btn {
     width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.644)
-}
-.swiper-slide img {
-    width: 100%;
-    max-height: 100vh;
-    object-fit: fill;
-}
-.top-title {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 6rem;
-    z-index: 1;
-}
-.description-text {
+  }
+  .top-wrapper {
     text-align: center;
-    line-height: 3rem;
-    font-size: 1.4rem;
-}
-.rule {
-    height: 0px;
-    border-radius: 1px;
-    border: 1px solid rgb(100, 100, 100);
-    width: 80%;
-    margin: 3rem auto 1rem;
-} 
-.sub-title {
-    font-size: 2.4rem;
-    text-align: center;
-    margin: 10rem 0 4rem;
-}
-.profile {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
+  }
+  .top-wrapper p {
+    font-size: 14px;
+  }
+  .lesson {
+    width: 100%;
+  }
+  .lesson-wrapper {
+    height: 1400px;
+  }
+  .message-wrapper .btn {
+    width: 100%;
+  }
 }
 
-#profile-img {
-    width: 375px;
-    height: 375px;
-    padding: 0 4rem;
+.skill {
+  background-color: #ffffff;
+  padding: 20px 20px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.skill-list {
+  background: #ffffff;
+  color: rgb(17, 11, 11);
+  text-align: center;
+  padding: 0px 50px;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  font-size: 17px;
+}
+
+footer {
+  background: linear-gradient(90deg, rgb(195, 255, 239) 0%, rgb(101, 255, 240) 100%);
+}
+
+.shutter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgb(209, 231, 255) 0%, rgb(255, 255, 255) 100%);
+  z-index: 9999;
+}
+
+.shutter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  background: linear-gradient(90deg, rgb(195, 255, 239) 0%, rgb(101, 255, 240) 100%);
+  height: 1px;
+}
+
+.shutter {
+  -webkit-animation: byeShutter 1.6s forwards;
+  animation: byeShutter 1.6s forwards;
+}
+
+.shutter::before {
+  -webkit-animation: shutterOpen 1.6s forwards;
+  animation: shutterOpen 1.6s forwards;
+}
+
+.content {
+  -webkit-animation: contentScale 1.6s forwards;
+  animation: contentScale 1.6s forwards;
+}
+
+@keyframes byeShutter {
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
     z-index: -1;
+  }
 }
-#profile-img img {
+
+@keyframes shutterOpen {
+  0% {
+    width: 0;
+    height: 1px;
+  }
+  50% {
     width: 100%;
-    min-width: 375px;
+    height: 1px;
+  }
+  90% {
+    width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: 0 100%;
-    border-radius: 50%;
-}
-
-#profile-text {
-    max-width: 704px;
-    line-height: 2rem;
-    padding: 0 1rem;
-}
-#place-name {
-    font-size: 2rem;
-}
-.promotion {
+  }
+  100% {
     width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
+    height: 100%;
+  }
 }
-#site-footer {
-    margin-top: 6rem;
-    background-color: #333;
-    width: 100%;
-    height: 60px;
+.snssharer {
+  margin: 10px 0 20px 0;
 }
-#copyright {
-    color: #fff;
-    text-align: center;
-    padding-top: 20px;
-} 
-#discord-img {
-    width: 300px;
-    height: 300px;
-    padding: 0 4rem;
+.snssharer:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
 }
-#discord-img img {
-    width: 90%;
-    min-width: 300px;
-    height: 90%;
-    object-fit: cover;
-    object-position: 0 100%;
-    border-radius: 50%;
+.snssharer span a {
+  width: 19%;
+  float: left;
+  display: block;
+  margin: 0 1% 0 0;
+  border: solid 2px #333;
+  border-radius: .4rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
 }
-.test{
-    display: flex;
+.snssharer .facebook a {
+  color: #3c5a99;
+  border-color: #3c5a99;
 }
-.sns-img{
-    width: 320px;
-    height: 200px;
-    padding: 0 4rem;
+.snssharer .twitter a {
+  color: #28aae1;
+  border-color: #28aae1;
 }
-#sns-img img{
-    width: 90%;
-    min-width: 100px;
-    height: 90%;
-    object-fit: cover;
-    object-position: 0 100%;
-    border-radius: 50%;
+.snssharer .hatena a {
+  color: #009fd7;
+  border-color: #009fd7;
 }
-#Otherwebsites{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
+.snssharer .pocket a {
+  color: #ed374d;
+  border-color: #ed374d;
 }
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
-
-.notification.is-link.is-light {
-    z-index:-1;
+.snssharer .line a {
+  color: #01ba01;
+  border-color: #01ba01;
 }
